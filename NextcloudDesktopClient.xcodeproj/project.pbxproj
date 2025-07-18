@@ -1,0 +1,72 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXGroup section */
+		AAABC7F42E2A85EC00F77644 = {
+			isa = PBXGroup;
+			children = (
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		AAABC7F52E2A85EC00F77644 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1640;
+			};
+			buildConfigurationList = AAABC7F82E2A85EC00F77644 /* Build configuration list for PBXProject "NextcloudDesktopClient" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAABC7F42E2A85EC00F77644;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		AAABC7F92E2A85EC00F77644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6HAL2RA6Y6;
+			};
+			name = Debug;
+		};
+		AAABC7FA2E2A85EC00F77644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6HAL2RA6Y6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAABC7F82E2A85EC00F77644 /* Build configuration list for PBXProject "NextcloudDesktopClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAABC7F92E2A85EC00F77644 /* Debug */,
+				AAABC7FA2E2A85EC00F77644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAABC7F52E2A85EC00F77644 /* Project object */;
+}
