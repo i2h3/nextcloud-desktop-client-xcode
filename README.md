@@ -1,6 +1,7 @@
 # Nextcloud Desktop Client in Xcode
 
 This is an Xcode project which builds upon the Nextcloud desktop client repository to enable building and debugging in an Xcode project.
+Consider this project as a portable workspace to bring the Nextcloud desktop client in the environment you are familiar with.
 
 ## Requirements
 
@@ -12,7 +13,7 @@ This is an Xcode project which builds upon the Nextcloud desktop client reposito
 1. Clone this repository to wherever you want to have it.
 2. Clone [the Nextcloud desktop client repository](https://github.com/nextcloud/desktop) into `Upstream` within this repository clone. 
 3. Copy [`Build.xcconfig.template`](Build.xcconfig.template) to `Build.xcconfig` and adjust the values in it to your local setup.
-4. Build or run the product. **Known issue:** Launching the binary from Xcode makes it quit without any apparent reason or crash report. Manually launching the binary works fine but requires manual attachment to the process in Xcode ([#3](https://github.com/i2h3/nextcloud-desktop-client-xcode/issues/3)).
+4. Build or run the product.
 
 ## How It Works
 
