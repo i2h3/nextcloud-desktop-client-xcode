@@ -6,14 +6,93 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXFileReference section */
+		AA62EFD52E2E7EFA00FCC246 /* NextcloudIntegration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NextcloudIntegration.xcodeproj; sourceTree = "<group>"; };
+		AA8584C52E2E65730030BA3C /* NextcloudIntegration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NextcloudIntegration.xcodeproj; sourceTree = "<group>"; };
+		AA8589FF2E2E6FA20030BA3C /* Build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Build.xcconfig; sourceTree = "<group>"; };
+		AA858A002E2E6FA20030BA3C /* Build.xcconfig.template */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; path = Build.xcconfig.template; sourceTree = "<group>"; };
+		AA9818622E2E73CA00F504C3 /* NextcloudIntegration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NextcloudIntegration.xcodeproj; sourceTree = "<group>"; };
+		AAA3A2792E2E640E0028CDBF /* NextcloudIntegration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NextcloudIntegration.xcodeproj; sourceTree = "<group>"; };
+		AAA3A7442E2E646E0028CDBF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AAAB11B52E2D2C1F00F77644 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AAABC8002E2A889500F77644 /* Craft.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Craft.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AA62F4FE2E2E850300FCC246 /* Build */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Build;
+			sourceTree = "<group>";
+		};
+		AAA3A7322E2E640E0028CDBF /* Upstream */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Upstream;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXGroup section */
+		AA62F4FC2E2E7EFA00FCC246 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA85897E2E2E65730030BA3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA981D892E2E73CA00F504C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAA3A7332E2E640E0028CDBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AAABC7F42E2A85EC00F77644 = {
 			isa = PBXGroup;
 			children = (
+				AA62F4FE2E2E850300FCC246 /* Build */,
+				AAA3A7442E2E646E0028CDBF /* .gitignore */,
+				AAA3A7322E2E640E0028CDBF /* Upstream */,
+				AAAB11B52E2D2C1F00F77644 /* README.md */,
+				AA8589FF2E2E6FA20030BA3C /* Build.xcconfig */,
+				AA858A002E2E6FA20030BA3C /* Build.xcconfig.template */,
+				AAABC8002E2A889500F77644 /* Craft.sh */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		AAABC7FC2E2A865C00F77644 /* NextcloudDesktopClient */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "\"$(SOURCE_ROOT)/Craft.sh\"";
+			buildConfigurationList = AAABC7FD2E2A865C00F77644 /* Build configuration list for PBXLegacyTarget "NextcloudDesktopClient" */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/zsh;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = NextcloudDesktopClient;
+			packageProductDependencies = (
+			);
+			passBuildSettingsInEnvironment = 1;
+			productName = NextcloudDesktopClient;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXProject section */
 		AAABC7F52E2A85EC00F77644 /* Project object */ = {
@@ -21,6 +100,11 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					AAABC7FC2E2A865C00F77644 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
 			};
 			buildConfigurationList = AAABC7F82E2A85EC00F77644 /* Build configuration list for PBXProject "NextcloudDesktopClient" */;
 			developmentRegion = en;
@@ -33,8 +117,27 @@
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AAA3A7332E2E640E0028CDBF /* Products */;
+					ProjectRef = AAA3A2792E2E640E0028CDBF /* NextcloudIntegration.xcodeproj */;
+				},
+				{
+					ProductGroup = AA85897E2E2E65730030BA3C /* Products */;
+					ProjectRef = AA8584C52E2E65730030BA3C /* NextcloudIntegration.xcodeproj */;
+				},
+				{
+					ProductGroup = AA62F4FC2E2E7EFA00FCC246 /* Products */;
+					ProjectRef = AA62EFD52E2E7EFA00FCC246 /* NextcloudIntegration.xcodeproj */;
+				},
+				{
+					ProductGroup = AA981D892E2E73CA00F504C3 /* Products */;
+					ProjectRef = AA9818622E2E73CA00F504C3 /* NextcloudIntegration.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
+				AAABC7FC2E2A865C00F77644 /* NextcloudDesktopClient */,
 			);
 		};
 /* End PBXProject section */
@@ -42,15 +145,144 @@
 /* Begin XCBuildConfiguration section */
 		AAABC7F92E2A85EC00F77644 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8589FF2E2E6FA20030BA3C /* Build.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 6HAL2RA6Y6;
+				EXECUTABLE_PATH = NextcloudDev.app/Contents/MacOS/NextcloudDev;
+				PRODUCT_NAME = NextcloudDev;
 			};
 			name = Debug;
 		};
 		AAABC7FA2E2A85EC00F77644 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8589FF2E2E6FA20030BA3C /* Build.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 6HAL2RA6Y6;
+				EXECUTABLE_PATH = NextcloudDev.app/Contents/MacOS/NextcloudDev;
+				PRODUCT_NAME = NextcloudDev;
+			};
+			name = Release;
+		};
+		AAABC7FE2E2A865C00F77644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = "";
+				EXECUTABLE_PATH = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "";
+			};
+			name = Debug;
+		};
+		AAABC7FF2E2A865C00F77644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = "";
+				EXECUTABLE_PATH = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "";
 			};
 			name = Release;
 		};
@@ -62,6 +294,15 @@
 			buildConfigurations = (
 				AAABC7F92E2A85EC00F77644 /* Debug */,
 				AAABC7FA2E2A85EC00F77644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAABC7FD2E2A865C00F77644 /* Build configuration list for PBXLegacyTarget "NextcloudDesktopClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAABC7FE2E2A865C00F77644 /* Debug */,
+				AAABC7FF2E2A865C00F77644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

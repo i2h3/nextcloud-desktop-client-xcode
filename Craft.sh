@@ -1,0 +1,34 @@
+#!/bin/env zsh
+
+# Read the user environment.
+source ~/.zprofile
+
+if [ -z "${CODE_SIGN_IDENTITY}" ]; then
+    echo "Error: CODE_SIGN_IDENTITY is not defined or is empty!"
+    exit 1
+fi
+
+DESKTOP_CLIENT_PROJECT_ROOT="$SOURCE_ROOT/Upstream"
+
+if [ -d "$DESKTOP_CLIENT_PROJECT_ROOT/admin/osx/mac-crafter" ]; then
+    cd "$DESKTOP_CLIENT_PROJECT_ROOT/admin/osx/mac-crafter"
+else
+    echo "Error: Directory '$DESKTOP_CLIENT_PROJECT_ROOT/admin/osx/mac-crafter' does not exist!"
+    exit 1
+fi
+
+echo "Desktop client project root: $DESKTOP_CLIENT_PROJECT_ROOT"
+echo "Build path: $DERIVED_SOURCES_DIR"
+echo "Product path: $SOURCE_ROOT/Build"
+echo "Code sign identity: $CODE_SIGN_IDENTITY"
+
+swift run mac-crafter \
+    --build-path="$DERIVED_SOURCES_DIR" \
+    --product-path="$SOURCE_ROOT/Build" \
+    --full-rebuild \
+    --build-type="Debug" \
+    --dev \
+    --disable-auto-updater \
+    --build-file-provider-module \
+    --code-sign-identity="$CODE_SIGN_IDENTITY" \
+    "$DESKTOP_CLIENT_PROJECT_ROOT"

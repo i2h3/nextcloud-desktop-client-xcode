@@ -1,0 +1,5 @@
+//
+// The common name of the signing certificate to use for code signing.
+// It must be present in your keychain and a development certificate.
+//
+CODE_SIGN_IDENTITY=

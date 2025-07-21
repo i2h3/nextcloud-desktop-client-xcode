@@ -1,0 +1,7 @@
+# The custom build settings specific for the developer's environment.
+Build.xcconfig
+
+NextcloudDesktopClient.xcodeproj/**/*/Package.resolved
+
+# The cloned upstream project in this directory.
+Upstream
