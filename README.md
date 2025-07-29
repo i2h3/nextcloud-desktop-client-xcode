@@ -22,3 +22,19 @@ Consider this project as a portable workspace to bring the Nextcloud desktop cli
 - `Craft.sh` prepares the execution of and finally runs [`mac-crafter`](https://github.com/nextcloud/desktop/tree/master/admin/osx/mac-crafter) which is part of the Nextcloud desktop client repository to simplify builds on macOS.
 - By running `mac-crafter` with the right arguments and options, Xcode can attach to the built app with its debugger and stop at breakpoints. One of the key factors is the `Debug` build type which flips certain switches in the CMake build scripts ([in example: app hardening or get-task-allow entitlement](https://github.com/nextcloud/desktop/pull/8474/files)).
 - The built Nextcloud desktop client app bundle is not placed into a derived data directory of Xcode but [`Build`](./Build) to enable the Xcode scheme included in this project refer to it with a path relative to the workspace. Otherwise Xcode would write an absolute path into the scheme file which is not portable across development machines. 
+
+## Hints
+
+Just for reference, a few helpful snippets for inspecting state on breakpoints with the Xcode debugger.
+
+### Print a `QString`
+
+```lldb
+call someString.toStdString()
+```
+
+### Print a `QStringList`
+
+```lldb
+call someStrings.join("\n").toStdString()
+```
