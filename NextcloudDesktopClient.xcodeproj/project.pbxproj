@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		AA62EFD52E2E7EFA00FCC246 /* NextcloudIntegration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NextcloudIntegration.xcodeproj; sourceTree = "<group>"; };
-		AA8584C52E2E65730030BA3C /* NextcloudIntegration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NextcloudIntegration.xcodeproj; sourceTree = "<group>"; };
 		AA8589FF2E2E6FA20030BA3C /* Build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Build.xcconfig; sourceTree = "<group>"; };
 		AA858A002E2E6FA20030BA3C /* Build.xcconfig.template */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; path = Build.xcconfig.template; sourceTree = "<group>"; };
-		AA9818622E2E73CA00F504C3 /* NextcloudIntegration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NextcloudIntegration.xcodeproj; sourceTree = "<group>"; };
-		AAA3A2792E2E640E0028CDBF /* NextcloudIntegration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NextcloudIntegration.xcodeproj; sourceTree = "<group>"; };
 		AAA3A7442E2E646E0028CDBF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AAAB11B52E2D2C1F00F77644 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AAABC8002E2A889500F77644 /* Craft.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Craft.sh; sourceTree = "<group>"; };
@@ -73,6 +69,27 @@
 			);
 			sourceTree = "<group>";
 		};
+		AACA6D922E3A3EAB00066D47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAD3349F2E3B61AD003C9813 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAD33C6E2E3B79BF003C9813 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
@@ -117,24 +134,6 @@
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AAA3A7332E2E640E0028CDBF /* Products */;
-					ProjectRef = AAA3A2792E2E640E0028CDBF /* NextcloudIntegration.xcodeproj */;
-				},
-				{
-					ProductGroup = AA85897E2E2E65730030BA3C /* Products */;
-					ProjectRef = AA8584C52E2E65730030BA3C /* NextcloudIntegration.xcodeproj */;
-				},
-				{
-					ProductGroup = AA62F4FC2E2E7EFA00FCC246 /* Products */;
-					ProjectRef = AA62EFD52E2E7EFA00FCC246 /* NextcloudIntegration.xcodeproj */;
-				},
-				{
-					ProductGroup = AA981D892E2E73CA00F504C3 /* Products */;
-					ProjectRef = AA9818622E2E73CA00F504C3 /* NextcloudIntegration.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				AAABC7FC2E2A865C00F77644 /* NextcloudDesktopClient */,
