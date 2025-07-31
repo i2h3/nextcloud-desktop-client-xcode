@@ -28,34 +28,6 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXGroup section */
-		AA62F4FC2E2E7EFA00FCC246 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AA85897E2E2E65730030BA3C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AA981D892E2E73CA00F504C3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AAA3A7332E2E640E0028CDBF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		AAABC7F42E2A85EC00F77644 = {
 			isa = PBXGroup;
 			children = (
@@ -67,27 +39,6 @@
 				AA858A002E2E6FA20030BA3C /* Build.xcconfig.template */,
 				AAABC8002E2A889500F77644 /* Craft.sh */,
 			);
-			sourceTree = "<group>";
-		};
-		AACA6D922E3A3EAB00066D47 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AAD3349F2E3B61AD003C9813 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AAD33C6E2E3B79BF003C9813 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +85,11 @@
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AA67999E2E3B9E7100F4FF74 /* Products */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AAABC7FC2E2A865C00F77644 /* NextcloudDesktopClient */,
