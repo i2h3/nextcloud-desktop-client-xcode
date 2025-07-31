@@ -24,7 +24,7 @@ echo "Code sign identity: $CODE_SIGN_IDENTITY"
 
 swift run mac-crafter \
     --build-path="$DERIVED_SOURCES_DIR" \
-    --product-path="$SOURCE_ROOT/Build" \
+    --product-path="/Applications" \
     --build-type="Debug" \
     --dev \
     --disable-auto-updater \

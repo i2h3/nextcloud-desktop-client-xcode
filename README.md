@@ -21,7 +21,7 @@ Consider this project as a portable workspace to bring the Nextcloud desktop cli
 - The target runs the [Craft.sh](Craft.sh) shell script which is part of this Xcode project.
 - `Craft.sh` prepares the execution of and finally runs [`mac-crafter`](https://github.com/nextcloud/desktop/tree/master/admin/osx/mac-crafter) which is part of the Nextcloud desktop client repository to simplify builds on macOS.
 - By running `mac-crafter` with the right arguments and options, Xcode can attach to the built app with its debugger and stop at breakpoints. One of the key factors is the `Debug` build type which flips certain switches in the CMake build scripts ([in example: app hardening or get-task-allow entitlement](https://github.com/nextcloud/desktop/pull/8474/files)).
-- The built Nextcloud desktop client app bundle is not placed into a derived data directory of Xcode but [`Build`](./Build) to enable the Xcode scheme included in this project refer to it with a path relative to the workspace. Otherwise Xcode would write an absolute path into the scheme file which is not portable across development machines. 
+- The built Nextcloud desktop client app bundle is not placed into a derived data directory of Xcode but `/Applications`. The standard behavior of placing the product into Xcode's derived data directory would result in absolute reference paths within the scheme file which are not portable across devices and users due to varying user names.
 
 ## Hints
 
@@ -38,3 +38,13 @@ call someString.toStdString()
 ```lldb
 call someStrings.join("\n").toStdString()
 ```
+
+### Attach to File Provider Extension Process
+
+You can debug the file provider extension process(es) in Xcode by attaching to them by their binary name.
+
+1. Select this menu item in Xcode: _Debug_ → _Attach to Process by PID or Name..._
+2. Enter "FileProviderExt".
+3. Confirm.
+4. If no process is already running, then Xcode will wait for it to be launched to attach automatically.
+5. This usually happens when you launch the main app or set up a new account with file provider enabled.
