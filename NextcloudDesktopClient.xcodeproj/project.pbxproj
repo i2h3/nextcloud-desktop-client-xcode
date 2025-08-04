@@ -15,11 +15,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		AA62F4FE2E2E850300FCC246 /* Build */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Build;
-			sourceTree = "<group>";
-		};
 		AAA3A7322E2E640E0028CDBF /* Upstream */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Upstream;
@@ -31,7 +26,6 @@
 		AAABC7F42E2A85EC00F77644 = {
 			isa = PBXGroup;
 			children = (
-				AA62F4FE2E2E850300FCC246 /* Build */,
 				AAA3A7442E2E646E0028CDBF /* .gitignore */,
 				AAA3A7322E2E640E0028CDBF /* Upstream */,
 				AAAB11B52E2D2C1F00F77644 /* README.md */,
