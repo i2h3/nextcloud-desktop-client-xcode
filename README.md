@@ -11,7 +11,7 @@ Consider this project as a portable workspace to bring the Nextcloud desktop cli
 ## Usage
 
 1. Clone this repository to wherever you want to have it.
-2. Clone [the Nextcloud desktop client repository](https://github.com/nextcloud/desktop) into `Upstream` within this repository clone. 
+2. **Optional** (the `Craft.sh` script will do so otherwise): Clone [the Nextcloud desktop client repository](https://github.com/nextcloud/desktop) as `Upstream` within the root of this repository clone where `NextcloudDesktopClient.xcodeproj` is located, in example with `git clone https://github.com/nextcloud/desktop.git Upstream`.
 3. Copy [`Build.xcconfig.template`](Build.xcconfig.template) to `Build.xcconfig` and adjust the values in it to your local setup.
 4. Build or run the product.
 

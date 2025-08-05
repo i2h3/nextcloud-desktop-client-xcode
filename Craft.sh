@@ -10,6 +10,19 @@ fi
 
 DESKTOP_CLIENT_PROJECT_ROOT="$SOURCE_ROOT/Upstream"
 
+if [ ! -d "$DESKTOP_CLIENT_PROJECT_ROOT" ]; then
+    echo "Desktop client project root does not exist. Cloning repository..."
+    cd "$SOURCE_ROOT"
+    git clone --branch=master --quiet https://github.com/nextcloud/desktop.git Upstream
+
+    if [ $? -ne 0 ]; then
+        echo "Error: Failed to clone the Nextcloud desktop client repository!"
+        exit 1
+    else
+        echo "Successfully cloned the Nextcloud desktop client repository."
+    fi
+fi
+
 if [ -d "$DESKTOP_CLIENT_PROJECT_ROOT/admin/osx/mac-crafter" ]; then
     cd "$DESKTOP_CLIENT_PROJECT_ROOT/admin/osx/mac-crafter"
 else
