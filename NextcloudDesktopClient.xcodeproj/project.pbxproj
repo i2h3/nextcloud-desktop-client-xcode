@@ -79,11 +79,6 @@
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AA67999E2E3B9E7100F4FF74 /* Products */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				AAABC7FC2E2A865C00F77644 /* NextcloudDesktopClient */,
