@@ -3,12 +3,16 @@
 This is an Xcode project which builds upon the Nextcloud desktop client repository to enable building and debugging in an Xcode project.
 Consider this project as a portable workspace to bring the Nextcloud desktop client in the environment you are familiar with.
 
+## Known Issues
+
+- Right now, the project does not support signing a different app identity than the default one (`com.nextcloud.desktopclient`) which is owned by the Nextcloud GmbH development team registered with Apple. This means that you have to be signed in with a developer account in Xcode which is part of that development team when building. ([#4](https://github.com/i2h3/nextcloud-desktop-client-xcode/issues/4))
+- Even when building successfully, Xcode may conclude that the build failed or at least some errors occurred during the build. During the build, some command outputs messages with an "Error: " prefix. Since this is the same way the compiler usually reports errors to Xcode, the latter assumes something might have gone wrong. But no invocation exits with an error code. Hence, the build can still complete successfully while Xcode might just misinterpret the console output. You will see at the end of the build output log in Xcode. ([#5](https://github.com/i2h3/nextcloud-desktop-client-xcode/issues/5))
+- The developer build may be fragile and its file provider extension sometimes fails to create the Realm database file in the sandbox container even though it should be abled to. This might be related to an entitlement present in the standard build but still missing in the developer build. Using the standard build first to set up an account appears to be a workaround for now. ([#6](https://github.com/i2h3/nextcloud-desktop-client-xcode/issues/6))
+
 ## Requirements
 
 - See [the Nextcloud desktop client repository](https://github.com/nextcloud/desktop).
 - You must have an Apple Development certificate for signing in your keychain.
-
-**Known limitation**: Right now, the project does not support signing a different app identity than the default one (`com.nextcloud.desktopclient`) which is owned by the Nextcloud GmbH development team registered with Apple. This means that you have to be signed in with a developer account in Xcode which is part of that development team when building. This problem is tracked as [issue #4](https://github.com/i2h3/nextcloud-desktop-client-xcode/issues/4).
 
 ## Usage
 
