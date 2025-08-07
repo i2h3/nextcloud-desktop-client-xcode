@@ -8,6 +8,8 @@ Consider this project as a portable workspace to bring the Nextcloud desktop cli
 - See [the Nextcloud desktop client repository](https://github.com/nextcloud/desktop).
 - You must have an Apple Development certificate for signing in your keychain.
 
+**Known limitation**: Right now, the project does not support signing a different app identity than the default one (`com.nextcloud.desktopclient`) which is owned by the Nextcloud GmbH development team registered with Apple. This means that you have to be signed in with a developer account in Xcode which is part of that development team when building. This problem is tracked as [issue #4](https://github.com/i2h3/nextcloud-desktop-client-xcode/issues/4).
+
 ## Usage
 
 1. Clone this repository to wherever you want to have it.
