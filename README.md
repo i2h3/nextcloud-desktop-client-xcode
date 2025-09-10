@@ -50,7 +50,15 @@ call someStrings.join("\n").toStdString()
 You can debug the file provider extension process(es) in Xcode by attaching to them by their binary name.
 
 1. Select this menu item in Xcode: _Debug_ → _Attach to Process by PID or Name..._
-2. Enter "FileProviderExt".
+2. Enter `FileProviderExt`. If you would also like to debug the file provider UI extension, then you can additionally specify `FileProviderUIExt`.
 3. Confirm.
-4. If no process is already running, then Xcode will wait for it to be launched to attach automatically.
-5. This usually happens when you launch the main app or set up a new account with file provider enabled.
+4. If no process is already running, then Xcode will wait for it to be launched to attach automatically. This usually happens when you launch the main app or set up a new account with file provider enabled.
+
+### Work on NextcloudFileProviderKit
+
+You can directly debug changes to the NextcloudFileProviderKit edited from this project.
+You have to have a local repository clone of the package somewhere locally, though.
+Then, you have to open the NextcloudIntegration.xcodeproj project from the upstream repository clone in Xcode.
+Drag and drop the package folder into the project navigator of the NextcloudIntegration project.
+This will cause Xcode to resolve to the local and editable package instead of a cached clone from remote.
+When you then run the build action of this root project, the local dependency is built as well.
