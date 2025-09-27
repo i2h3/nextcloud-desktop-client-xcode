@@ -1,7 +1,11 @@
 #!/bin/env zsh
 
-# Read the user environment.
-source ~/.zprofile
+# Read the available environment paths which include (for example) Homebrew.
+for f in /etc/paths.d/*; do
+    while read -r line; do
+        export PATH="$PATH:$line"
+    done < "$f"
+done
 
 if [ -z "${CODE_SIGN_IDENTITY}" ]; then
     echo "Error: CODE_SIGN_IDENTITY is not defined or is empty!"
