@@ -7,6 +7,11 @@ for f in /etc/paths.d/*; do
     done < "$f"
 done
 
+if [ -f "~/.zprofile" ]; then
+    echo "Sourcing ~/.zprofile to include possible PATH definitions..."
+    source "~/.zprofile"
+fi
+
 if [ -z "${CODE_SIGN_IDENTITY}" ]; then
     echo "Error: CODE_SIGN_IDENTITY is not defined or is empty!"
     exit 1
