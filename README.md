@@ -1,5 +1,8 @@
 # Nextcloud Desktop Client in Xcode
 
+> [!WARNING]
+> This project is obsolete because [I could integrate it directly into the Nextcloud desktop client project](https://github.com/nextcloud/desktop/pull/8838) which simplifies a lot.
+
 This is an Xcode project which builds upon the Nextcloud desktop client repository to enable building and debugging in an Xcode project.
 Consider this project as a portable workspace to bring the Nextcloud desktop client in the environment you are familiar with.
 
